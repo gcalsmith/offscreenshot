@@ -1,9 +1,8 @@
+console.log("Starting script...");
 const puppeteer = require('puppeteer');
 const mustache = require('mustache')
 const fs = require('fs');
 const tempFileName = "templates/cache.html";
-console.log("Hello world!");
-
 var config = require('./config.json');
 
 (async () => {
@@ -14,7 +13,7 @@ var config = require('./config.json');
     for (const langFile of config.languageFiles) {
 
         // Load all template strings for language.
-        console.log(`Loading strings for language ${langFile}`);
+        console.log(`Loading language ${langFile}`);
         var language = require(`./strings/${langFile}.json`);
         var languageTemplateStrings = language.templateStrings;
 
