@@ -16,9 +16,9 @@ jobs:
     - run: npm ci
     #- run: npm test
     - run: node index.js
-    - run: ls /output
+    - run: ls /output/
     - name: Upload screenshots
       uses: actions/upload-artifact@v2
       with:
         name: screenshots
-        path: /output
+        path: /output/
