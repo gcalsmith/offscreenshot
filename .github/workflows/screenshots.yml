@@ -1,4 +1,5 @@
 name: Screenshot generation
+on:
   push:
     branches: [ master ]
   pull_request:
